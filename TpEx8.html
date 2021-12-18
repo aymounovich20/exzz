@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX8</title>
+    <script type="text/javascript">
+        function hello(){
+            var choix = window.document.frm.choix.value;
+            confirm("vous avez choisi le choix "+choix);
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="frm">
+        <h3>Entrez votre choix :</h3>
+        <input type="radio" id="1" name="choix" value="1">
+        <label for="1">CHoix numéro 1</label><br>
+        <input type="radio" id="2" name="choix" value="2">
+        <label for="2">CHoix numéro 2</label><br>
+        <input type="radio" id="3" name="choix" value="3">
+        <label for="3">CHoix numéro 3</label><br>
+        <button onclick="hello()">Quel est votre choix ?</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1</title>
+    <script type="text/javascript">
+        function year(){
+            var year = window.document.frm.year.value;
+            alert(year);
+        }
+    </script>
+</head>
+<body>
+    <form name="frm">
+        <label for="year"> choisir l'année : </label>
+        <input type="text" name="year" id="year"><br>
+        <label for="month"> choisir le mois : </label>
+        <input type="text" name="month" id="month"><br>
+    </form>
+    <button onclick="year()">Nombre de jours</button>
+</body>
+</html>

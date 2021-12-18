@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function hello(){
+            var a = Math.floor(Math.random() * 10);
+            var n = prompt("choisir un nombre :");
+            if(a==n)
+                confirm("le nombre choisit est correcte");
+            else
+                alert("le nombre choisit est incorrecte");
+            document.write(a)
+        }
+    </script>
+</head>
+<body onload="hello()">
+    
+</body>
+</html>

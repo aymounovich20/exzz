@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /*var date = new Date();
+        document.write("La date d'aujourd'hui "+date.toLocaleDateString());*/
+        var tab = new Array();
+        tab[0] = "1.png";
+        tab[1] = "2.png";
+        tab[2] = "3.jpg";
+
+        var i = 1;
+       function imag(){
+        // var image1 = new Image();
+        // image1.src("1.png");
+        // var image2 = new Image();
+        // image2.src("2.png");
+        // var image3 = new Image();
+        // image3.src("3.jpg");
+       }
+
+       function incr(){
+            
+           if(i==3)
+            i = 0;
+           else
+            i++;
+         document.write("<img onclick='incr()' src="+tab[i]+"><br> ");
+         
+       }
+      // imag();
+      // incr();
+       
+        
+       function changeimg(){
+           //document.getElementById("img").src=a.src;
+           //document.write("<img onclick='changeimg()' src="+tab[i]+">")
+           var img = document.getElementById("img");
+           img.src = tab[i];
+           if(i==2)
+                i=0;
+           else
+                i++;
+       }
+    </script>
+
+            <img src='1.png' onclick="changeimg()" id="img">
+    <!--<button >cliquer ici pour changer l'image</button>-->
+</body>
+</html>

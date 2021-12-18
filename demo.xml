@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet href="demo.xsl" type="text.xsl" ?>
+<compilation>
+    <mp3>
+        <titre>Foule sentimentale</titre>
+        <artiste>Alain souchon</artiste>
+    </mp3>
+    <mp3>
+        <titre>Solar pleure</titre>
+        <artiste>MC Solaar</artiste>
+    </mp3>
+</compilation>

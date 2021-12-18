@@ -1,0 +1,59 @@
+
+body{
+    background-color: lightgray;
+    width: 50%;
+}
+.entete{
+    background-color: rgb(107, 231, 225);
+   
+}
+h1{
+    text-align: center;
+    color: #006eff;
+}
+.age{
+    font-weight: bold;
+    font-style: 14px;
+    text-align: center;
+}
+.specialite{
+    font-weight: bold;
+    font-style: 14px;
+    text-align: center;
+    color: #0011ff;
+}
+.prag_entete{
+    text-align: center;
+}
+.adresse{
+    text-align: right;
+}
+.h2{
+background-color: rgba(0, 204, 255, 0.151);
+color: #0026ff;
+text-align: center;
+}
+span{
+    font-weight: bold;
+}
+td {padding: 15px;}
+.anneeExp{
+    display: flex;
+	flex-direction: row;
+}
+.flex-item {
+	flex: auto;
+}
+.annee{
+    text-align: center;
+}
+.tdexp{
+    padding: 0 100px;
+}
+h3{
+    display:inline
+}
+.center{
+    align-items: center;
+    margin-left: 20%;
+}

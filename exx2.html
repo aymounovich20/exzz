@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function verifier(){
+            var email = window.document.frm.email.value;
+            console.log()
+            if(email.indexOf('@')>=0)
+                confirm("email enregistrer");
+            else
+                alert("saisir de nouveau l'email");
+        }
+
+    </script>
+    <form action="" name="frm">
+        <input type="text" name = "email">
+        <button onclick="verifier()">enregistrer</button>
+    </form>
+  
+</body>
+</html>

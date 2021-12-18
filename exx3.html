@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        function controle(){
+            var input = window.document.form.input.value;
+            if(input.length<8 || input.length>16)
+                alert("doit etre entre 8 et 16")
+            else
+                confirm("valide")
+        }
+    </script>
+    <form action="" name="form">
+        <input type="text" name="input">
+        <button onclick="controle()">cliquer</button>
+    </form> -->
+    <script>
+        function calcul(){
+            var i = window.document.frm.line.value;
+            var j = window.document.frm.column.value;
+            document.write("*");
+        for(var ist=0;ist<=i;ist++)
+            document.write(ist+" ");
+        document.write("<br>");
+        for(var ist=0;ist<=i;ist++)
+        {   
+            for(var jst = 1;jst<=j;jst++)
+                document.write(ist*jst+" ");
+            document.write("<br>")
+        }
+        }
+//         var result = '* ';
+// for (var i = 0; i < 10; i++) {
+
+//     for (var j = 0; j < 10; j++) {
+        
+//         if(i == 0 && j > 0){
+//           result += '[' + j + ']';
+//         } 
+//         else if(j == 0 && i>0){
+//           result += '[' + i + '] ';
+//         } 
+//         else if(i>0 && j>0){
+//         result += (i*j) + ' ';
+//         }
+        
+//     }
+//     result += '<br>'
+// }
+// document.write(result);
+    </script>
+    <form action="" name="frm">
+        <label for="line"> nb de ligne</label>
+        <input type="text" name="line">
+        <label for="column">nb colonnes</label>
+        <input type="text" name="column" id="">
+        <button onclick="calcul()">générer</button>
+    </form>
+</body>
+</html>

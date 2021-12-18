@@ -1,0 +1,52 @@
+<html>
+ <head>
+ <title>ex6</title>
+<LINK href="style.css" rel=stylesheet type=text/css>
+    <script>
+      function calculer()
+      { var inputText=window.document.myform.score.value;
+          if(inputText>15)
+          {
+              alert("Vous êtes déjà un joueur expert");
+          }
+          else
+          {
+              alert("Vous êtes encore un joueur débutant");
+          }
+          var count=0;
+          for(var i=0;i<10;i++)
+          {
+              if(window.document.myform.case[i].checked==true)
+              {
+                  count++;
+              }
+          }
+          if(count>3 || count<3)
+          {alert("vous avez coucher "+count +" veuillez coucher 3");}
+      }
+        
+    </script>
+ </head>
+<body>
+    <form name="myform">
+        <input type="checkbox" name="case"/>Case 1<br/>
+<input type="checkbox" name="case"/>Case 2<br/>
+
+<input type="checkbox" name="case"/>Case 3<br/>
+<input type="checkbox" name="case"/>Case 4<br/>
+<input type="checkbox" name="case"/>Case 5<br/>
+<input type="checkbox" name="case"/>Case 6<br/>
+<input type="checkbox" name="case"/>Case 7<br/>
+<input type="checkbox" name="case"/>Case 8<br/>
+<input type="checkbox" name="case"/>Case 9<br/>
+<input type="checkbox" name="case"/>Case 10<br/>
+<input type="text" name="score"/><br/>
+<button value="calculer score" onclick="calculer()">Calculer score</button> 
+    </form>
+
+
+</body>
+ 
+   
+    </html>
+   
